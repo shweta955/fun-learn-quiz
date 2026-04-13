@@ -1,0 +1,82 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  
+}
+
+/* CATEGORY */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* QUIZ */
+.quiz-container {
+  background: #222;
+  padding: 20px;
+  width: 320px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correct { background: green; }
+.wrong { background: red; }
+
+#progress-bar {
+  background: #555;
+  height: 10px;
+}
+
+#progress {
+  background: lime;
+  height: 10px;
+  width: 0%;
+}
+
+/* ANIMATION */
+.fade-out {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 0.5s;
+}

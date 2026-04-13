@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CATEGORY SCREEN -->
+<div id="category-box">
+  <h2>Select Quiz Category</h2>
+
+  <div class="categories">
+    <div class="card" onclick="startQuiz('cs')">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <p>Computer Science</p>
+    </div>
+
+    <div class="card" onclick="startQuiz('math')">
+      <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904">
+      <p>Maths</p>
+    </div>
+
+    <div class="card" onclick="startQuiz('gk')">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+      <p>General Knowledge</p>
+    </div>
+
+    <div class="card" onclick="startQuiz('history')">
+      <img src="https://images.unsplash.com/photo-1461360228754-6e81c478b882">
+      <p>History</p>
+    </div>
+
+    <div class="card" onclick="startQuiz('geo')">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <p>Geography</p>
+    </div>
+
+    <div class="card" onclick="startQuiz('random')">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+      <p>Random Quiz</p>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div class="quiz-container" style="display:none;">
+  <div id="progress-bar"><div id="progress"></div></div>
+
+  <h2 id="question"></h2>
+  <div id="options"></div>
+
+  <p>Time left: <span id="timer">10</span>s</p>
+  <button id="next">Next</button>
+</div>
+
+<script src="final.js"></script>
+</body>
+</html>
