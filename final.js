@@ -1,5 +1,25 @@
 let current = 0;
 let score = 0;
+/*for backgroung in questions*/
+function setBackground(category) {
+  let bg = "";
+
+  if (category === "cs") {
+    bg = "https://images.unsplash.com/photo-1518770660439-4636190af475";
+  } else if (category === "math") {
+    bg = "https://images.unsplash.com/photo-1509228468518-180dd4864904";
+  } else if (category === "gk") {
+    bg = "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f";
+  } else if (category === "history") {
+    bg = "https://images.unsplash.com/photo-1461360228754-6e81c478b882";
+  } else if (category === "geo") {
+    bg = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e";
+  } else {
+    bg = "https://images.unsplash.com/photo-1519389950473-47ba0277781c";
+  }
+
+  document.body.style.backgroundImage = `url('${bg}')`;
+}
 let questions = [];
 let time = 10;
 let timer;
@@ -106,6 +126,7 @@ const allQuestions = {
 
 /* START QUIZ */
 function startQuiz(category) {
+  setBackground(category);
   document.getElementById("category-box").classList.add("fade-out");
 
   setTimeout(() => {
